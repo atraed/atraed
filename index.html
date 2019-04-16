@@ -85,15 +85,15 @@
  	image_number = Math.floor(image_number/rand)
  	return(image[image_number])
  }
- document.write("<img src='" + imlocation + randomimage()+ "'>");
+ document.write("<img style="display: block;
+margin-left: auto;
+margin-right: auto;" src='" + imlocation + randomimage()+ "'>");
 //-->
 </script>
 
 </head>
 
-<body id="home" style="background-color:black; img { display: block;
-margin-left: auto;
-margin-right: auto;} ">
+<body id="home" style="background-color:black;">
 
 
 	<!-- Google Analytics Code -->
