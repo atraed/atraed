@@ -167,9 +167,9 @@ image[82] = 'image1.1.gif'
  image[123] = 'image3a.7.gif'
  var rand = 123/image.length
  function randomimage() {
+	 
  	currentdate = new Date()
- 	image_number = currentdate.getSeconds()*2
- 	image_number = Math.floor(image_number/rand)
+ 	image_number = Math.floor(Math.random() * 123) + 1  
  	return(image[image_number])
  }
  document.write("<img src='" + imlocation + randomimage()+ "'>");
