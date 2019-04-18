@@ -168,7 +168,7 @@ image[82] = 'image1.1.gif'
  var rand = 123/image.length
  function randomimage() {
  	currentdate = new Date()
- 	image_number = currentdate.getSeconds()
+ 	image_number = currentdate.getSeconds()*2
  	image_number = Math.floor(image_number/rand)
  	return(image[image_number])
  }
