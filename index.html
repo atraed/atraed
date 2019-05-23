@@ -192,11 +192,25 @@ image[82] = 'image1_1.gif'
  image[135] = 'image4a_5.gif'
  image[136] = 'image4a_6.gif'
  image[137] = 'image4a_7.gif'
- var rand = 123/image.length
+ image[138] = 'image5_1.gif'
+ image[139] = 'image5_2.gif'
+ image[140] = 'image5_3.gif'
+ image[141] = 'image5_4.gif'
+ image[142] = 'image5_5.gif'
+ image[143] = 'image5_6.gif'
+ image[144] = 'image5_7.gif'
+ image[145] = 'image5a_1.gif'
+ image[146] = 'image5a_2.gif'
+ image[147] = 'image5a_3.gif'
+ image[148] = 'image5a_4.gif'
+ image[149] = 'image5a_5.gif'
+ image[150] = 'image5a_6.gif'
+ image[151] = 'image5a_7.gif'
+ var rand = 151/image.length
  function randomimage() {
 	 
  	currentdate = new Date()
- 	image_number = Math.floor(Math.random() * 137) + 1  
+ 	image_number = Math.floor(Math.random() * 151) + 1  
  	return(image[image_number])
  }
  document.write("<img src='" + imlocation + randomimage()+ "'>");
